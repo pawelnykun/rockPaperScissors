@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+}
+
+.start {
+	padding: 5% 0;
+}
+.btn {
+	margin-bottom: 5%;
+}
+.userPick {
+	padding: 5%;
+}
+.userPick .btn {
+	width: 20%;
+}
