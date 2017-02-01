@@ -115,9 +115,11 @@ function setGamePoints() {
 function endOfGame () {
 	if (player.score === 10) {
 		alert('Wygrałeś!');
-		setGameElements('ended');
+		gameState = 'ended';
+		setGameElements();
 	} else if (computer.score === 10) {
 		alert('Przegrałeś!');
-		setGameElements('ended');
+		gameState = 'ended';
+		setGameElements();
 	}
 };
