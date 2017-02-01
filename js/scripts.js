@@ -19,8 +19,7 @@ var gameState = 'notStarted',
         score: 0
     };
 
-var newGameBtn = document.getElementById('js-newGameButton'),
-    newGameElem = document.getElementById('js-newGameElement'),
+var newGameElem = document.getElementById('js-newGameElement'),
     pickElem = document.getElementById('js-playerPickElement'),
     resultsElem = document.getElementById('js-resultsTableElement');
 
@@ -88,6 +87,8 @@ function checkRoundWinner(playerPick, computerPick) {
 
     if (playerPick == computerPick) {
         winnerIs = 'noone';
+        playerResultElem.innerHTML = "Remis!";
+        computerResultElem.innerHTML = "Remis!";
     } else if (
         (computerPick == 'Kamień' &&  playerPick == 'Nożyce') ||
         (computerPick == 'Nożyce' &&  playerPick == 'Papier') ||
