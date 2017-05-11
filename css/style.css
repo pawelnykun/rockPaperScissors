@@ -1,16 +1,56 @@
 body {
 	margin: 0;
+	min-width: 320px;
+}
+
+#js-playerPickElement, #js-resultsTableElement {
+	margin-top: 50px;
 }
 
 .start {
 	padding: 5% 0;
 }
 .btn {
-	margin-bottom: 5%;
+	margin: 5%;
 }
+
+.btn:hover {
+	box-shadow: 5px 5px 10px black;
+}
+
 .userPick {
 	padding: 5%;
 }
 .userPick .btn {
 	width: 20%;
+}
+
+.paper {
+	max-height: 244px;
+	width: 100%;
+}
+
+/* RWD */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.paper {
+		max-height: 199px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.paper {
+		max-height: 150px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.paper {
+		width: 100%;
+	}
+
+	.btn {
+		padding: 6px;
+	}
 }

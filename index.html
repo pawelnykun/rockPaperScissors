@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <body>
     <div class="container">
       <h3 class="text-center">
-        Witaj w grze
+        Witaj w grze<br>
         <span class="label label-default">Kamień</span>
         <span class="label label-info">Papier</span>
         <span class="label label-danger">Nożyce</span>
@@ -24,24 +25,33 @@
     </div>
     <div id="js-playerPickElement" class="container">
       <div class="row text-center">
-        <button id="js-playerPick_rock" class="btn">
-          <span class="badge">
-            <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
-          </span>
-          Kamień
-        </button>
-        <button id="js-playerPick_paper"  class="btn">
-          <span class="badge">
-            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-          </span>
-          Papier
-        </button>
-        <button id="js-playerPick_scissors"  class="btn">
-          <span class="badge">
-            <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
-          </span>
-          Nożyce
-        </button>
+        <div class="col-xs-4">
+          <img class="img-responsive img-thumbnail img-circle" src="https://static.pexels.com/photos/161702/harmony-relax-rock-moqui-161702.jpeg" alt="rock">
+          <button id="js-playerPick_rock" class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+            </span>
+            Kamień
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <img class="img-responsive img-thumbnail img-circle paper" src="https://static.pexels.com/photos/220634/pexels-photo-220634.jpeg" alt="paper">
+          <button id="js-playerPick_paper"  class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            </span>
+            Papier
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <img class="img-responsive img-thumbnail img-circle" src="https://static.pexels.com/photos/322345/pexels-photo-322345.jpeg" alt="scissors">
+          <button id="js-playerPick_scissors"  class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+            </span>
+            Nożyce
+          </button>
+        </div>
       </div>
     </div>
     <div id="js-resultsTableElement" class="container">
